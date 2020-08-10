@@ -7,7 +7,9 @@ class baidu1(unittest.TestCase):
         self.driver=webdriver.Chrome()
         self.driver.maximize_window()
         self.driver.get("https://www.baidu.com")
+        #脚本运行，错误的信息会被打印到这个列表中
         self.verificationErrors = []
+        #是否继续接受下一个警告
         self.accept_next_alert = True
     def tearDown(self):
         self.driver.quit()
